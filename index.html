@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>GifTaskic Homework Assignment Week 6</title>
+	
+	<title>GifTastic Homework Assignment Week 6</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+
 </head>
 <body>
+	<br>
+	<div id="carButton"></div>
+	<br>
+	<form id="carForm">
 
-<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
-<script type="text/javascript">
+	<label for="carInput">Add A Car: </label>
+	<input type="text" id="carInput"><br>
 
-// query the needed api URL	
-var queryURL = "http://api.giphy.com/v1/stickers/search?q=south+park&limit=10&api_key=dc6zaTOxFJmzC";
+	<input id="addButton" type="submit" name="Submit">
 
-// using ajax to GET the data and return it with response and then sending to the console.
-$.ajax({url:queryURL,method:'GET'})
-	.done(function(response){
-		console.log(response);
-	});
+	</form>
+	<br>
+	<div id="GIFArea"></div>
+	<br>
 
-</script>
-
-
+	<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+	<script type="text/javascript" src="assets/javascript/giftastic.js"></script>
 </body>
 </html>
